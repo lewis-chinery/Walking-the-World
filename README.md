@@ -16,8 +16,13 @@ To ensure we minimise our dips in the sea, we **compare the probability density 
 
 Putting together all the above and repeating this process for many iterations, we should eventually move around the entire probability distribution. Overall, we will spend more time in areas of high proability (cities) than we will in areas of low probability (the Atlantic!). Run for an infinite amount of time, **our sample of points visited will converge on the underlying probability distribution**.
 
+##### Further info
+- https://machinelearningmastery.com/markov-chain-monte-carlo-for-probability/
+- https://brilliant.org/wiki/markov-chains/
+- https://www.maths.lancs.ac.uk/~sherlocc/Publications/rwm.impl.5.pdf
+
 ### Significance of this project
 
 This small project highlights some of the issues faced in **Bayesian inference** when trying to sample from an unknown, complex posterior distribution. e.g. If we were to happen to randomly initiate all of our Markov chains in Africa, we might see after 10,000 iterations that they appear to be converging. However, if we were to then assume that we have successfully explored all posterior space (the whole world), we would of course be mistaken.
 
-If we had more time and computing power, it would be interesting to run more chains for longer preiods of time, tweaking the RWM step-size and city spread to see if we can obtain better convergence. Finally, we could also try out different MCMC methods to see see if they provide better performance.
+If we had more time and computing power, it would be interesting to run more chains for longer preiods of time, tweaking the RWM step-size and city spread to see if we can obtain faster convergence. Finally, we could also try out different MCMC methods to see see if they provide better performance.
