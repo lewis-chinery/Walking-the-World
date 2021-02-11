@@ -8,7 +8,7 @@ Using a Random Walk Metropolis (RWM) algorithm and [data from Kaggle](https://ww
 
 ### Theory
 
-Markov chain Monte Carlo (MCMC) algorithms allow us to generate respresentative samples from a potentially complex probability distirbution.
+Markov chain Monte Carlo (MCMC) algorithms allow us to generate respresentative samples from a potentially complicated probability distribution.
 
 The **Random Walk Metropolis** algorithm is a widely used MCMC method that simply involves proposing new positons to move to on a probability distribution. The direction and size of the proposed step is taken from a normal distribution centred on your current locationa and with width described by the RWM's step-size. In this way, the RWM is a bit 'dumb' - depending on where we are stood on our map, we may be just as likely to propose walking into the sea as we would to the next city.
 
