@@ -10,4 +10,4 @@ Using a Random Walk Metropolis sampler and [data from Kaggle](https://www.kaggle
 
 This small project highlights some of the issues faced in Bayesian inference when trying to sample from an unknown, irregular posterior distribution. e.g. If we were to randomly initiate all of our chains in Africa, we might see after 10,000 iterations that they appear to be converging. However, if we were to then assume that we have successfully explored all posterior space (the whole world), we would of course be mistaken.
 
-If we had more time and computing power, it would be interesting to run more RWM chains for longer preiods of time, tweaking the step size and city spread to see if we can obtain better and more efficient convergence.
+If we had more time and computing power, it would be interesting to run more RWM chains for longer preiods of time, tweaking the step size and city spread to see if we can obtain better and more efficient convergence.  Finally, we could also try out different Markov Chain Monte Carlo (MCMC) methods to see see if they provide better performance.
